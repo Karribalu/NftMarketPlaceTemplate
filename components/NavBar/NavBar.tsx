@@ -9,9 +9,9 @@ import { BsSearch } from 'react-icons/bs';
 import { CgMenuLeft, CgMenuRight } from 'react-icons/cg';
 
 //---Internal Imports
-import Style from './Navbar.module.css';
+import Style from './NavBar.module.css';
 import { Discover, HelpCenter, Notification, Profile, SideBar } from './index';
-import { Button } from '../componentIndex';
+import { Button } from '../Button/Button';
 import images from '../../public/assets/index';
 
 interface IProps {}
@@ -83,12 +83,18 @@ export const NavBar: FC<IProps> = (props) => {
       <div className={Style.navbar_container}>
         <div className={Style.navbar_container_left}>
           <div className={Style.navbar_container_left_logo}>
-            <Image src={images.logo} alt="logo" width={100} height={100} />
+            <Image
+              src={images.logo}
+              className={Style.logo}
+              alt="logo"
+              width={100}
+              height={100}
+            />
           </div>
           <div className={Style.navbar_container_left_box_input}>
             <div className={Style.navbar_container_left_box_input_box}>
               <input type="text" placeholder="Search for NFT" />
-              <BsSearch className={Style.searchIcon} onClick={() => {}} />
+              <BsSearch className={Style.search_icon} onClick={() => {}} />
             </div>
           </div>
         </div>
@@ -118,11 +124,15 @@ export const NavBar: FC<IProps> = (props) => {
           <div className={Style.navbar_container_right_notification}>
             <MdNotifications
               onClick={openNotification}
-              className="Style.notify"
+              className={Style.notify}
             />
             {notification && <Notification />}
           </div>
 
+          {/* CREATE BUTTON SECTION */}
+          <div className={Style.navbar_container_right_button}>
+            <Button btnName="Create" handleClick={() => {}} />
+          </div>
           {/* PROFILE MENU */}
           <div className={Style.navbar_container_right_profile_box}>
             <div className={Style.navbar_container_right_profile}>
@@ -140,13 +150,13 @@ export const NavBar: FC<IProps> = (props) => {
 
           {/* MENU BUTTON */}
           <div className={Style.navbar_container_right_menuBtn}>
-            <CgMenuRight className={Style.menuIcon} onClick={openSideBar} />
+            <CgMenuRight className={Style.menu_icon} onClick={openSideBar} />
           </div>
         </div>
       </div>
       {/* SIDEBAR COMPONENT */}
       {openSideMenu && (
-        <div className={Style.SideBar}>
+        <div className={Style.sideBar}>
           <SideBar setOpenSideMenu={setOpenSideMenu} />
         </div>
       )}

@@ -1,14 +1,21 @@
-import React, { FC } from 'react'
-
-interface IProps {}
+import React, { FC } from 'react';
+import Style from './Button.module.css';
+interface IProps {
+  btnName: string;
+  handleClick: () => void;
+}
 
 /**
-* @author
-* @function @Button
-**/
+ * @author
+ * @function @Button
+ **/
 
-export const Button:FC<IProps> = (props) => {
+export const Button: FC<IProps> = ({ btnName, handleClick }) => {
   return (
-    <div>Button</div>
-   )
- }
+    <div className={Style.box}>
+      <button className={Style.btn} onClick={handleClick}>
+        {btnName}
+      </button>
+    </div>
+  );
+};

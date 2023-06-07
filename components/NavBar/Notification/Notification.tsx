@@ -27,7 +27,7 @@ export const Notification: FC<IProps> = (props) => {
         </div>
         <div className={Style.notification_box_info}>
           <h4>John Doe</h4>
-          <p>Commented on your post</p>
+          <p>Commented on your post....</p>
           <small> 3 Minutes ago</small>
         </div>
         <span className={Style.notification_box_new}> </span>

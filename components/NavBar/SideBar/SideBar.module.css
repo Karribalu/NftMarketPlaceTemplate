@@ -1,0 +1,65 @@
+.sideBar{
+    margin-top: -3rem;
+    border-bottom: 1px solid var(--icons-color);
+    width: 25rem;
+    display: flex;
+}
+.sideBar_box{
+    padding: 2rem;
+    border-bottom: 1px solid var(--icons-color);
+    background-color: var(--main-bg-color);
+}
+.sideBar_closeBtn{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+}
+.sideBar_closeBtn:hover{
+    transform: rotate(40deg);
+}
+.sideBar_box p{
+    margin-top: 1rem;
+}
+.sideBar_social{
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    align-items: center;
+    margin-top: .5rem;
+}
+.sideBar_social a{
+    padding: .2rem;
+    border-radius: 50%;
+    transition: all .3s ease-in-out; 
+    display: grid;   
+}
+.sideBar_social a:hover{
+    background-color: var(--icons-color);
+    color: var(--shadow-dark-color);
+    box-shadow: 1px solid var(--icons-color);
+}
+.sideBar_menu{
+    text-transform: uppercase;
+    font-weight: 500;
+    border-top: 1px solid var(--icons-color);
+    margin-top: 1.5rem;
+}
+.sideBar_menu_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sideBar_btn{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sideBar_help{
+    margin-left: 5rem;
+}

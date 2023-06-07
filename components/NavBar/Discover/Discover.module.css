@@ -1,0 +1,10 @@
+.discoverMenu{
+    padding: .5rem 1rem;
+    transition: all .3s ease-in;
+    z-index: 111111;
+}
+.discoverMenu:hover{
+    background-color: var(--icons-color);
+    color:var(--shadow-dark-color);
+    border-radius: .3rem;
+}
