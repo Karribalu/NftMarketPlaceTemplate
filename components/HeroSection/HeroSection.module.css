@@ -1,0 +1,52 @@
+.heroContainer{
+    width: 80%;
+    margin: 3rem auto;
+}
+@media screen and (max-width: 35em) {
+    .heroContainer{
+        width: 90%;
+    }
+}
+.heroContainer_box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+@media screen and (max-width: 35em) {
+    .heroContainer_box{
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+    .heroContainer_box_left {
+        padding-right: 1rem;
+    }
+
+    .heroContainer_box_left h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: 1rem;
+    }
+    .heroContainer_box_left p {
+        font-size: 1rem;
+        font-weight: 200;
+        line-height: 1.5;
+        margin-bottom: 2rem;
+    }
+}
+.heroContainer_box_left{
+    padding-right: 2rem;
+}
+.heroContainer_box_left h1{
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+.heroContainer_box_left p{
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+    

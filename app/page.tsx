@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
-import { NavBar } from '../components/componentIndex';
+import Style from './page.module.css';
+import { HeroSection } from '../components/componentIndex';
 interface IProps {}
 
 /**
@@ -8,7 +9,11 @@ interface IProps {}
  **/
 
 const Home: FC<IProps> = (props) => {
-  return <div>Home</div>;
+  return (
+    <div className={Style.homePage}>
+      <HeroSection />
+    </div>
+  );
 };
 
 export default Home;
