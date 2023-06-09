@@ -64,7 +64,7 @@ export const Service: FC<IProps> = (props) => {
             <span>Step 4</span>
           </p>
           <h3>Start Trading</h3>
-          <p>Connect with wallet, discover, buy NFTs, sell NFTs, and more.</p>
+          <p>Connect with wallet, discover, buy NFTs, sell NFT, and more.</p>
         </div>
       </div>
     </div>
